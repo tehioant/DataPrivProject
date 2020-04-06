@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+            <link rel="stylesheet" href="../static/css/auction.css">
+<script>
+function tri(){
+return 10;
+}
+
+
+function myFunction(oFrom) {
+    b = tri();
+    a = oFrom.elements["bid"].value;
+    oFrom.elements["lastname"].value = b;
+}
+</script>
+</head>
+<body>
+
+    <p id="demo">A Paragraph</p>
+
+    <br>
+    <br>
+
+
+
+    <form action="/refresh/" method="POST">
+      First name:<br>
+      <input type="text" name="Bid" id="bid" >
+      <br>
+      Last name:<br>
+      <input type="text" name="lastname" value="1" id="lastname" >
+      <br><br>
+      <input type="submit" value="Submit" onclick="myFunction(this.form)">
+    </form>
+
+
+
+  </body>
+
+      <!-- SCRIPTS -->
+      <script type="text/javascript"  src="../static/js/RSA.js"></script>
+      <script type="text/javascript"  src="../static/js/BigInteger.js"></script>
+
+</html>
